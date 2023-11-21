@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+}
+
+#heavy{
+position: absolute;
+right: 150px;
+top: 0;
+width: 200px;
+}
+
+#something{
+    width: 1600px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#something:hover{
+    /* transform: scale(1.5); */
+   animation: beat .90s infinite alternate;
+}
+
+@keyframes beat{
+	to { transform: scale(1.1); }
+}
+
+
+
+
+#heavy:hover
+{
+  opacity:0;
+  transition: opacity .7s ease-in;
+  -moz-transition: opacity .5s ease-in;
+  -webkit-transition: opacity .6s ease-in;
+  -o-transition: opacity 5s ease-in;
+}
+
